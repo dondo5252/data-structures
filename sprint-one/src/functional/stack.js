@@ -58,4 +58,4 @@ var Stack = function() {
 //_    {1: 'hello'}     //push
 //_    {2: 'maybe'}
 //_    {3: 'yes}
-//_    {4: 'no}
+//_    {4: 'no}//

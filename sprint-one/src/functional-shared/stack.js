@@ -20,7 +20,7 @@ stackMethods.push = function (value) {
   // this keycount ++
   this.keyCount++;
 };
-
+//
 //pop
 ////create new property named pop assisgned to function passs value
 stackMethods.pop = function () {

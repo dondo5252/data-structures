@@ -26,3 +26,4 @@ stackMethods.push = function (value) {
  stackMethods.size = function () {
    return this.keyCount
  }
+ //

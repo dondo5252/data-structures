@@ -21,7 +21,7 @@ var queueMethods = {};
   //increase storageSize
   this.enqueueSize++;
 }
-
+//
 //dequeue
 queueMethods.dequeue = function() {
   //delete from storage

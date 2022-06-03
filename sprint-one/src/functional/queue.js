@@ -30,7 +30,7 @@ var Queue = function() {
   return someInstance;
 };
 
-
+//
 // value  e   d   c   b   a
 ///       |   |   |   |  |
 //key     5   4   3   2  1
