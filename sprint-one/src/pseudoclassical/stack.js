@@ -6,15 +6,17 @@ var Stack = function() {
 
 Stack.prototype.push = function (value) {
   // this.keyCount = value
-  console.log('value' , value)
   this.keyCount++
+  // this.keyCount = value
 }
 
-Stack.prototype.pop = function () {
+Stack.prototype.pop = function (value) {
 
   if(this.keyCount > 0) {
-    this.keyCount--;
-
+     this.keyCount--;
+    // var temp = this.keyCount
+    // delete this.keyCount
+    // return temp
   }
 }
 

@@ -9,17 +9,17 @@ var Stack = function() {
 var stackMethods = {};
 stackMethods.push = function (value) {
   stackMethods[this.keyCount] = value;
-  this.keyCount++
+  this.keyCount++;
 }
 
 
  //pop
  stackMethods.pop = function () {
    if(this.keyCount > 0) {
-    this.keyCount--
-    var temp = stackMethods[this.keyCount]
-     delete stackMethods[this.keyCount]
-     return temp
+    this.keyCount--;
+    var temp = stackMethods[this.keyCount];
+     delete stackMethods[this.keyCount];
+     return temp;
    }
 }
 
