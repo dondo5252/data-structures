@@ -57,7 +57,7 @@ var LinkedList = function() {
   //   if (nodeStart.value === target) {
   //     return true;
   //   }
-
+///{branched}
   //   // include recursive somewhere
   //   if (nodeStart.next !== null) {
   //     console.log('nodeStart.next', nodeStart.next);
