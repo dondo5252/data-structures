@@ -43,32 +43,11 @@ var LinkedList = function() {
       list.head = list.head.next;
       list.contains(target, list.head);
     }
+    //return boolean
     return false;
     //store list.head.next
     //return boolean
-    // }
   };
-  //
-  // list.contains = function(target) {
-  //   // debugger;
-  //   var nodeStart = list.head;
-  //   console.log('nodeStart', nodeStart);
-  //   console.log('nodeStart.value:', nodeStart.value);
-  //   if (nodeStart.value === target) {
-  //     return true;
-  //   }
-///{branched}
-  //   // include recursive somewhere
-  //   if (nodeStart.next !== null) {
-  //     console.log('nodeStart.next', nodeStart.next);
-  //     if (nodeStart.next.value === target) {
-  //       return true;
-  //     } else {
-  //       return false;
-  //     }
-  //   }
-  // };
-
   return list;
 };
 
@@ -82,5 +61,8 @@ var Node = function(value) {
 
 /*
  * Complexity: What is the time complexity of the above functions?
- */
+addTo tail - Constant O(1)
+remove from head O(1) removing head but if middle is being removed )(n)
+contains - Linear O(n)
+*/
 // | | | | | |
