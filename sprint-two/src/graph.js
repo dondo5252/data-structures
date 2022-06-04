@@ -13,7 +13,7 @@ var Graph = function() {
 Graph.prototype.addNode = function(node) {
   //add node to vertices object
   this.vertices[node] = node;
-  console.log(this.vertices[node]);
+
 };
 
 // Return a boolean value indicating if the value passed to contains is represented in the graph.
@@ -30,28 +30,24 @@ Graph.prototype.contains = function(node) {
 // Removes a node from the graph.
 Graph.prototype.removeNode = function(node) {
   //store value
-  var temp = this.vertices[node];
+
   //delete value
-  delete this.vertices[node];
+
   // Object.keys(this.edge)
-  // edgesList is an array of strings of this.edge keys
+
   var edgesList = Object.keys(this.edge);
-  // give us an array of the keys
-  // keys would be "1,2", "2,1", "3,4",...
-  // ['1,2', '2,1',..]
-  // iterate over the array with the if condition of indexOf(Node)
+
 
   for (let i = 0; i < edgesList.length; i++) {
     if (edgesList[i].indexOf(node) > -1) {
-      delete this.edges[edgesList[i]];
+      delete this.edge[edgesList[i]];
     }
   }
-  // if edgesList[i].indexOf(node) > -1
-  // delete
-  // give us a list of the array entries that have the node
-  // delete this.edge[^]
+
+  // edgesList is an array of strings of this.edge keys
 
   // deletes actual node
+  var temp = this.vertices[node];
   delete this.vertices[node];
   //return stored value
   return temp;
@@ -98,7 +94,13 @@ Graph.prototype.removeEdge = function(fromNode, toNode) {
 //5,4
 
 // Pass in a callback which will be executed on each node of the graph.
+// A .forEachNode() method that traverses through the graph, calling a passed in function once on each node
 Graph.prototype.forEachNode = function(cb) {
+  //for in loop through obj
+  for (let node in this.vertices) {
+    cb(this.vertices[node]);
+  }
+  //apply function
 };
 
 /*
