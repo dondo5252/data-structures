@@ -48,7 +48,7 @@ var LinkedList = function() {
     //return boolean
     // }
   };
-
+  //
   // list.contains = function(target) {
   //   // debugger;
   //   var nodeStart = list.head;
