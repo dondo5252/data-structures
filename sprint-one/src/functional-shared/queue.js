@@ -15,21 +15,21 @@ var Queue = function() {
 var queueMethods = {};
 //enqueue
 //create method passing in a value to push in
- queueMethods.enqueue = function (value) {
-    //add to storage the  storageSize as key and value as property
+queueMethods.enqueue = function (value) {
+//add to storage the  storageSize as key and value as property
   this.storage[this.enqueueSize] = value;
   //increase storageSize
   this.enqueueSize++;
-}
+};
 //
 //dequeue
 queueMethods.dequeue = function() {
   //delete from storage
-  if(this.enqueueSize - this.dequeueSize) {
-    var temp = this.storage[this.dequeueSize]
-    delete this.storage[this.dequeueSize]
+  if (this.enqueueSize - this.dequeueSize) {
+    var temp = this.storage[this.dequeueSize];
+    delete this.storage[this.dequeueSize];
     this.dequeueSize++;
-    return temp
+    return temp;
     //decrement
   }
 };
