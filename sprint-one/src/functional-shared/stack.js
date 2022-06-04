@@ -41,7 +41,7 @@ stackMethods.size = function () {
   return this.keyCount;
 };
 
-
+//
 //Last in first out
 //_    {1: 'hello'}
 //_    {2: 'goodbye}

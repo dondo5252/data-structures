@@ -38,7 +38,7 @@ treeMethods.contains = function(target) {
   };
   recursive(this.children);
   return isPresent;
-};
+};//
 
 
 

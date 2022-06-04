@@ -29,7 +29,7 @@ var Queue = function() {
 
   return someInstance;
 };
-
+//
 //
 // value  e   d   c   b   a
 ///       |   |   |   |  |
